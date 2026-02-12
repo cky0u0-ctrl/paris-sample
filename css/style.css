@@ -191,6 +191,11 @@ section {
     font-weight: 600;
 }
 
+.more-btn>a {
+    border-bottom: 2px solid;
+    /* 포지션주면 자식이 부모만큼 자리함 */
+}
+
 .wrap {}
 
 .list {
@@ -525,8 +530,23 @@ footer h3 {
 }
 
 @media screen and (max-width:480px) {
+
+    .main-slider-list>li {
+        flex: 0 0 100%;
+    }
+
     .promotion-list>li {
         flex: 0 0 100%;
+    }
+
+    .pb-story-list>li .text-box p {
+        display: none;
+    }
+
+    .more-btn {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
     }
 
     footer .inner {
